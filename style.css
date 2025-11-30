@@ -1,0 +1,150 @@
+:root {
+  --bg: #f7fafc;
+  --surface: #fff;
+  --text: #0f172a;
+  --muted: #667085;
+  --accent: #2563eb;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid #e6edf3;
+}
+
+.header-inner {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.name {
+  font-size: 1.75rem;
+  margin-bottom: .25rem;
+}
+
+.tag {
+  color: var(--muted);
+}
+
+.section {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid transparent;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.item {
+  margin-bottom: .5rem;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: .95rem;
+  margin: .25rem 0;
+}
+
+.simple-list {
+  list-style: none;
+  padding-left: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: .75rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid #e6edf3;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(2, 6, 23, 0.06);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(2, 6, 23, 0.08);
+}
+
+.card-title {
+  margin: 0 0 .5rem;
+  font-size: 1rem;
+}
+
+.card-desc {
+  color: var(--muted);
+  font-size: .95rem;
+  margin: 0 0 .5rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+.site-footer {
+  padding: 1.5rem 0;
+  text-align: center;
+  color: var(--muted);
+}
+
+.main-nav {
+  display: flex;
+  gap: 1rem;
+  padding: .5rem 0;
+  margin-left: auto;
+  align-items: center;
+}
+
+.main-nav .nav-link {
+  color: var(--muted);
+  text-decoration: none;
+  padding: .35rem .5rem;
+  border-radius: 6px;
+}
+
+.main-nav .nav-link.active,
+.main-nav .nav-link:hover {
+  color: var(--text);
+  background: rgba(37, 99, 235, 0.06);
+}
+
+@media (max-width: 768px) {
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .header-inner {
+    padding: 1.5rem;
+  }
+
+  .main-nav {
+    margin-left: 20px;
+  }
+}

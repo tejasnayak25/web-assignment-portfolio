@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bio-data | Tejas Nayak</title>
+  <meta name="description" content="Bio-data — Tejas Nayak">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Small override so biodata tables look tidy in the current minimal stylesheet */
+    .bio-table{width:100%;border-collapse:collapse;margin-top:.5rem}
+    .bio-table td{padding:.6rem 0;vertical-align:top}
+    .bio-label{font-weight:600;color:var(--muted);width:38%}
+    .bio-value{color:var(--text)}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="name">Tejas Nayak</h1>
+      <p class="tag">Web Developer • UI/UX</p>
+    </div>
+  </header>
+
+  <nav class="main-nav container" aria-label="Main navigation">
+    <a class="nav-link" href="index.html">Resume</a>
+    <a class="nav-link active" href="biodata.html">Bio-data</a>
+  </nav>
+
+  <main class="container">
+    <section class="section">
+      <h2>Personal Details</h2>
+      <div class="cards">
+        <article class="card">
+          <table class="bio-table">
+            <tr><td class="bio-label">Full name</td><td class="bio-value">Tejas Nayak</td></tr>
+            <tr><td class="bio-label">Date of birth</td><td class="bio-value">16 September 2005</td></tr>
+            <tr><td class="bio-label">Nationality</td><td class="bio-value">Indian</td></tr>
+            <tr><td class="bio-label">Marital status</td><td class="bio-value">Single</td></tr>
+            <tr><td class="bio-label">Blood group</td><td class="bio-value">O+</td></tr>
+          </table>
+        </article>
+      </div>
+    </section>
+
+    <div class="cards">
+      <article class="card">
+        <h2>Contact</h2>
+        <p class="muted">Email: <a href="mailto:tejas@example.com">tejas.23cs173@sode-edu.com</a></p>
+        <p class="muted">Phone: <a href="tel:+1234567890">1234567890</a></p>
+      </article>
+
+      <article class="card">
+        <h2>Family</h2>
+        <table class="bio-table">
+          <tr><td class="bio-label">Father</td><td class="bio-value">Achutha Nayak</td></tr>
+          <tr><td class="bio-label">Mother</td><td class="bio-value">Arpitha Nayak</td></tr>
+        </table>
+      </article>
+    </div>
+
+    <section class="section">
+      <div class="cards">
+        <article class="card">
+          <h2>Declaration</h2>
+          <p>I hereby declare that the above information is true to the best of my knowledge.</p>
+          <p class="muted">Place: Udupi · Date: 30 Nov 2025</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Tejas Nayak</div>
+  </footer>
+</body>
+</html>
